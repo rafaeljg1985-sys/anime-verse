@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    .<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7087843281047696"
+     crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma de películas y series de entretenimiento">
+    <title>Peli-Estrenos-RD | Streaming Profesional</title>
+    <link href='estilos.css' rel='stylesheet'/>
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><i class="fas fa-play-circle"></i> PeliEstrenos RD</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#animes">Animes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <h1>Cine en tus manos</h1>
+        <p>Explora los últimos estrenos con la mejor calidad.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar por título, género o año...">
+            <button>Buscar</button>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <div class="categories">
+            <button class="category-btn active">Todos</button>
+            <button class="category-btn">Acción</button>
+            <button class="category-btn">Terror</button>
+            <button class="category-btn">Comedia</button>
+            <button class="category-btn">Anime</button>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-fire"></i> Tendencias de la Semana</h2>
+        
+        <div class="movies-grid">
+            <!-- Película 1 -->
+            <a href="https://vimeos.net/embed-b5jyvcy837pt.html" class="movie-card">
+                <span class="movie-badge">HD</span>
+                <img src="https://image.tmdb.org/t/p/w500/79EVB4qhyfrdlMgT8GIRAikdzsQ.jpg" alt="Portada">
+                <div class="movie-info">
+                    <div class="movie-title">Moana 2</div>
+                    <div class="movie-meta">
+                        <span>2024</span>
+                        <span><i class="fas fa-star" style="color: gold;"></i> 8.5</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Película 2 -->
+            <a href="#" class="movie-card">
+                <span class="movie-badge">Estreno</span>
+                <img src="https://image.tmdb.org/t/p/w300//mB3zisIw3bsQcoDSnvMPAQhjrTM.jpg" alt="Aventura">
+                <div class="movie-info">
+                    <div class="movie-title">Gran Aventura</div>
+                    <div class="movie-meta">
+                        <span>2024</span>
+                        <span><i class="fas fa-star" style="color: gold;"></i> 7.8</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Película 3 (Ejemplo Unsplash) -->
+            <a href="#" class="movie-card">
+                <span class="movie-badge">HD</span>
+                <img src="https://image.tmdb.org/t/p/w300//mB3zisIw3bsQcoDSnvMPAQhjrTM.jpg" alt="Sci-Fi">
+                <div class="movie-info">
+                    <div class="movie-title">Odisea Espacial</div>
+                    <div class="movie-meta">
+                        <span>2023</span>
+                        <span><i class="fas fa-star" style="color: gold;"></i> 9.0</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Repetir según sea necesario -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <p>La mejor calidad en streaming para la República Dominicana y el mundo.</p>
+            </div>
+            <div>
+                <h3>Enlaces Rápidos</h3>
+                <p>Aviso Legal</p>
+                <p>DMCA</p>
+                <p>Contacto</p>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <div style="font-size: 24px; gap: 15px; display: flex; justify-content: center; margin-top: 10px;">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-telegram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Peli-Estrenos-RD. Creado por Rafael Jiménez.
+        </div>
+    </footer>
+
+    <script>
+        // Efecto de selección de categorías
+        const buttons = document.querySelectorAll('.category-btn');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                buttons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
